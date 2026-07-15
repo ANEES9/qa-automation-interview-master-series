@@ -1,0 +1,50 @@
+site_name: QA Automation Interview Master Series
+site_description: Original QA automation interview preparation books and technical documentation.
+site_url: https://anees9.github.io/qa-automation-interview-master-series/
+repo_url: https://github.com/ANEES9/qa-automation-interview-master-series
+repo_name: ANEES9/qa-automation-interview-master-series
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+
+nav:
+  - Home: index.md
+  - Selenium + Java: selenium-java/index.md
+  - Playwright + TypeScript: playwright-typescript/index.md
+  - API Testing: api-testing/index.md
+  - SQL: sql/index.md
+  - Git & Jenkins: git-jenkins/index.md
+  - Authoring:
+      - Book Style Guide: templates/book-style-guide.md
+      - Chapter Template: templates/chapter-template.md
+      - Question Template: templates/question-template.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences

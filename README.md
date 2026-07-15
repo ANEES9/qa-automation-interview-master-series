@@ -55,6 +55,19 @@ Reusable writing templates live in [docs/templates](docs/templates):
 - [Chapter Template](docs/templates/chapter-template.md)
 - [Book Style Guide](docs/templates/book-style-guide.md)
 
+## Documentation Website
+
+The documentation website is built with MkDocs and the Material theme.
+
+Local setup:
+
+```bash
+pip install -r requirements.txt
+mkdocs serve
+```
+
+Production builds are handled by GitHub Actions and deployed to GitHub Pages when changes are pushed to the `main` branch.
+
 ## Editorial Direction
 
 This project aims to be:
